@@ -4,8 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'my-portfolio',
     environment: environment,
-    baseURL: '/',
-    locationType: 'auto',
+    baseURL: '/my-portfolio',
+    locationType: 'hash',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
