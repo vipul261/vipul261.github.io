@@ -1,0 +1,6 @@
+//Verticaly center the element with respect to the nearest parent with relative position
+@mixin vc($top: 50%){
+    @include transform(translateY(-50%));
+    position: absolute;
+    top: $top;
+}
