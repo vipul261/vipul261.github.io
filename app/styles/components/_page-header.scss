@@ -24,6 +24,38 @@ $contentMargin: ( $pageHeaderHeight - $headerContentHeight )/2;
     z-index: $z-3;
 }
 .owner-image{
-    @include circle($headerContentHeight);
+    @include circle($headerContentHeight*4/3);
     background-color: $blueLake;
+    float: left;
+    cursor: pointer;
+    overflow: hidden;
+    img{
+        @include square(100%);
+    }
+}
+.social-link{
+    font-size: $headerContentHeight/2;
+    line-height: $headerContentHeight*4/3;
+    height: 100%;
+    width: $headerContentHeight;
+    text-align: center;
+    display: inline-block;
+    a{
+        color: white;
+        @include opacity(0.8);
+        &:hover{
+            @include opacity(1);
+        }
+    }
+}
+.owner-social-links{
+    @include transition(all 200ms ease);
+    @include opacity(0);
+    margin-left: 0.5rem;
+    pointer-events: none;
+    float: left;
+    &.show-social{
+        @include opacity(1);
+        pointer-events: auto;
+    }
 }

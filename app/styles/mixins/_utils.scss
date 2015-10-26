@@ -6,7 +6,11 @@
 }
 
 @mixin circle($size){
+    @include square($size);
+    border-radius: $size;
+}
+
+@mixin square($size){
     height: $size;
     width: $size;
-    border-radius: $size;
 }

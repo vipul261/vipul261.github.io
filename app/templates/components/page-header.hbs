@@ -1,5 +1,14 @@
-<div class="social-tools">
-    <div class="owner-image"><img/></div>
+<div {{action "toggleSocial" on="mouseEnter"}} {{action "toggleSocial" on="mouseLeave"}} class="social-tools">
+    <div class="owner-image"><img src="imgs/me.jpg"/></div>
+    <ul class="owner-social-links {{if showSocailBar "show-social"}}">
+        {{#each socialAccounts as |account|}}
+        <li class="social-link">
+            <a href="{{account.url}}" target="_blank">
+                {{fa-icon icon=account.icon}}
+            </a>
+        </li>
+        {{/each}}
+    </ul>
 </div>
 <div class="page-title">VIPUL GARG</div>
 {{yield}}
