@@ -1,6 +1,8 @@
-@import "mixins/css3";
-@import "mixins/utils";
-@import "reset";
+@import "mixins/_css3";
+@import "mixins/_utils";
+@import "variables/_color";
+@import "_reset";
+@import "components/_page-header";
 $font-stack: 'Heiti SC';
 html,
 body{
@@ -9,6 +11,7 @@ body{
 }
 html{
     font-family: $font-stack;
+    font-size: 10px;
 }
 body{
     position: relative;
@@ -19,4 +22,4 @@ body{
     width: 100%;
     margin: auto;
     font-size: 3rem
-} 
+}

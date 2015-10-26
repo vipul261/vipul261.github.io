@@ -4,3 +4,9 @@
     position: absolute;
     top: $top;
 }
+
+@mixin circle($size){
+    height: $size;
+    width: $size;
+    border-radius: $size;
+}

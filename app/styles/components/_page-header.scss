@@ -1,0 +1,27 @@
+$pageHeaderHeight: 9rem;
+$headerContentHeight: 3rem;
+$contentMargin: ( $pageHeaderHeight - $headerContentHeight )/2;
+.page-header {
+    position: fixed;
+    top: 0;
+    height: $pageHeaderHeight;
+    width: 100%;
+    background-color: $blueReflection;
+}
+.page-title{
+    @include vc();
+    color: white;
+    font-size: $headerContentHeight;
+    line-height: $headerContentHeight;
+    text-align: center;
+    width: 100%;
+}
+.social-tools{
+    @include vc();
+    margin: 0 $contentMargin;
+    float: left;
+}
+.owner-image{
+    @include circle($headerContentHeight);
+    background-color: $blueLake;
+}
