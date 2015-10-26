@@ -15,11 +15,13 @@ $contentMargin: ( $pageHeaderHeight - $headerContentHeight )/2;
     line-height: $headerContentHeight;
     text-align: center;
     width: 100%;
+    z-index: $z-2;
 }
 .social-tools{
     @include vc();
     margin: 0 $contentMargin;
     float: left;
+    z-index: $z-3;
 }
 .owner-image{
     @include circle($headerContentHeight);
