@@ -23,3 +23,11 @@ body{
     margin: auto;
     font-size: 3rem
 }
+.page-full-height{
+    height: 100%;
+}
+#workspace{
+    height: calc( 100% - 9rem );
+    margin-top: 9rem;
+    position: relative;
+}
