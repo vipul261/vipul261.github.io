@@ -5,19 +5,23 @@
 @import "components/_page-header";
 $font-stack: 'Heiti SC';
 html,
-body{
+body {
     height: 100%;
     width: 100%;
     overflow: hidden;
+    color: #4d4d4d
 }
-body > .ember-view{
+body > .ember-view {
     height: 100%;
+    border-top: 0.7rem solid #4d4d4d;
+    background-color: white;
+    @include box-sizing();
 }
-html{
+html {
     font-family: $font-stack;
     font-size: 10px;
 }
-body{
+body {
     position: relative;
 }
 .wip {
@@ -27,30 +31,45 @@ body{
     margin: auto;
     font-size: 3rem
 }
-#workspace{
-    height: calc( 100% - 9rem );
+#workspace {
+    height: calc( 100% - 9rem);
     margin-top: 9rem;
     position: relative;
 }
-
-.hero{
-    width: 50rem;
+.hero {
+    min-width: 30rem;
     margin: auto;
     text-align: center;
-    .logo{
+    .logo {
         display: block;
         margin: auto;
         width: 100px;
         opacity: 0.9;
     }
-    .name{
+    .name {
         font-size: 4rem;
         margin: 2rem auto 0;
         display: block;
         margin: 2rem auto;
     }
-    .skills{
-        font-size: 1.5rem;
+    .skills {
+        font-size: 1.4rem;
         text-transform: uppercase;
+        color: #666;
+        margin: 0 1.5rem;
+    }
+    .bio {
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+        margin: 5rem 10%;
+        padding: 3rem 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .connect {
+        width: 100%;
+        font-size: 1.4rem;
+        padding: 0 1.5rem;
+        @include box-sizing();
     }
 }
