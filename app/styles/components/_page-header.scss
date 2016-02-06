@@ -7,6 +7,7 @@ $contentMargin: ( $pageHeaderHeight - $headerContentHeight )/2;
     height: $pageHeaderHeight;
     width: 100%;
     background-color: $blueReflection;
+    display: none;
 }
 .page-title{
     @include vc();

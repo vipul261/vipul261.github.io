@@ -32,3 +32,25 @@ body{
     margin-top: 9rem;
     position: relative;
 }
+
+.hero{
+    width: 50rem;
+    margin: auto;
+    text-align: center;
+    .logo{
+        display: block;
+        margin: auto;
+        width: 100px;
+        opacity: 0.9;
+    }
+    .name{
+        font-size: 4rem;
+        margin: 2rem auto 0;
+        display: block;
+        margin: 2rem auto;
+    }
+    .skills{
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+}
