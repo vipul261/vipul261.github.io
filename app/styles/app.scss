@@ -9,7 +9,7 @@ body {
     height: 100%;
     width: 100%;
     overflow: hidden;
-    color: #4d4d4d
+    color: #4d4d4d;
 }
 body > .ember-view {
     height: 100%;
@@ -33,12 +33,14 @@ body {
 }
 #workspace {
     height: calc( 100% - 9rem);
-    margin-top: 9rem;
+    padding-top: 9rem;
     position: relative;
+    overflow-y: auto;
 }
 .hero {
     min-width: 30rem;
     margin: auto;
+    padding-bottom: 3rem; 
     text-align: center;
     .logo {
         display: block;
